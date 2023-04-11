@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Top 5 NEUST Courses</title>
+
+    <!--CSS Start-->
+
+    <style>
+      :root {
+        --color-white: #e9e9e9;
+        --color-black: #141d28;
+        --color-black1: #212b38;
+
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+
+
+      .menu_bar {
+        background-image: url(images/neust-logo.jpg);
+        height: 80px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 5%;
+      }
+
+      .logo {
+        height: 110px;
+        margin-top: 18px;
+
+      }
+
+
+      .menu_bar ul {
+        list-style: none;
+        display: flex;
+      }
+
+      .menu_bar ul li {
+        padding: 10px 30px;
+        position: relative;
+      }
+
+      .menu_bar ul li a {
+        color: var(--color-black);
+        text-decoration: none;
+        font-size: 20px;
+      }
+
+      p {
+        color: var(--color-black1);
+      }
+
+      .hero-section {
+        height: 110vh;
+        background: url(images/neust-logo.png) no-repeat center;
+        background-size: cover;
+      }
+
+      @media screen and (max-width: 768px) {
+        .hero-section {
+          background-size: contain;
+          background-position: top;
+        }
+      }
+
+      .tagline {
+        color: var(--color-black);
+        margin-left: 5%;
+        margin-top: 12%;
+        position: absolute;
+        font-family: sans-serif;
+        font-weight: bolder;
+        font-size: 3em;
+        
+      }
+
+      .sub-tagline{
+        color: var(--color-black);
+        margin-left: 5%;
+        margin-top: 20%;
+        position: absolute;
+        font-family: sans-serif;
+        font-weight: normal;
+        font-size: 1.2em;
+      }
+
+      .menu_bar {
+        
+        top: 0;
+        width: 100%;
+        background-image: url(images/neust-logo.png);
+        }
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 80px;
+  margin-bottom: 35px;
+
+  
+  
+}
+
+.card {
+  background: rgb(0,255,149);
+  background: linear-gradient(74deg, rgba(0,255,149,0.6783963585434174) 0%, rgba(0,68,108,0.6363795518207283) 100%);
+  box-shadow: 0 5px 20px rgba(20, 109, 224, 0.5);
+  border-radius: 5px;
+  padding: 20px;
+  width: 300px;
+  
+  
+  
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.blog-header{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 45px;
+}
+
+.blog-paragraph{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+
+h3{
+  text-align: center;
+}
+
+.footer {
+  
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  background-color: var(--color-black);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  margin-top: 50px;
+  list-style: none; /* remove bullet points from list */
+  padding: 0; /* remove default padding from list */
+}
+
+.footer-text li {
+  display: inline-block; /* display list items horizontally */
+  margin: 0 12px; /* add some space between list items */
+}
+
+.footer li a{
+  text-decoration: none;
+  color: var(--color-white);
+
+}
+
+.card:hover {
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+
+
+    </style>
+
+    <!--CSS Start-->
+  </head>
+
+  <!--HTML Start-->
+  <body>
+
+    <!--Hero section start--> 
+    <header>
+        <div class="menu_bar">
+            <a href="#"><img class="logo" src="images/logo.jpg"></a>
+            
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#courses-section">Courses</a></li>
+              <li><a href="team.html">Team</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>  
+
+        </div>
+    </header>
+
+      <div class="hero-section">
+        <p class="tagline">
+            Unleash Your Potential
+        </p>
+        <p class="sub-tagline">
+            Our courses are designed to provide you with a well-rounded <br>education that will equip you with the skills and knowledge <br>you need to succeed in today's fast-paced world.
+        </p>
+      </div>
+    <!--Hero section end-->
+
+    <!--Blog section start-->
+    <div class="container" id="courses-section">
+        <div class="row">
+          <div class="header">
+            <h2 class="blog-header"> Our Courses</h2>
+            <p class="blog-paragraph">Top 5 Nueva Ecija University of Science and Technology (NEUST) <br>courses that benefits you in the future.</p>
+          </div>
+        </div>
+        <div class="card-container">
+          <div class="content">
+            <div class="card">
+              <a href="course-information-tech.html"><img src="images/it.jpeg" alt="Card Image"></a>
+              <a href="course-information-tech.html"><h3>Information Technoloy</h3></a>
+              <p>Study  of computer-based information systems, including hardware, software, and networks, to solve business and organizational problems.</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="card">
+              <a href="course-engineer.html"><img src="images/engineering.jpeg" alt="Card Image"></a>
+              <a href="course-engineer.html"><h3>Engineering</h3></a>
+              <p>The application of scientific and mathematical principles to design, build, and maintain structures, machines, systems, and processes that solve practical problems.</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="card">
+              <a href="course-architect.html"><img src="images/architech.png" alt="Card Image"></a>
+              <a href="course-architect.html"><h3>Architecture</h3></a>
+              <p>The art and science of designing and planning buildings and other physical structures that are functional, aesthetically pleasing, and safe for human.</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="card">
+              <a href="course-teacher.html"><img src="images/teacher.jpeg" alt="Card Image"></a>
+              <a href="course-teacher.html"><h3>Teacher</h3></a>
+              <p>A professional who provides education and instruction to students in a school or other educational setting, typically specializing in a particular subject or age group.</p>
+            </div>
+          </div>
+          <div class="content">
+            <div class="card">
+              <a href="course-nursing.html"><img src="images/nursing.jpeg" alt="Card Image"></a>
+              <a href="course-nursing.html"><h3>Nursing</h3></a>
+              <p>The practice of providing medical care, treatment, and support to individuals, and communities, with a focus on promoting health, preventing illness, and managing chronic health conditions.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      
+
+
+
+
+    <!--Blog section end-->
+
+    <!--footer-->
+    <div class="footer">
+      <ul class="footer-text">
+        <li><a href="#">Home</a></li>
+        <li><a href="#courses-section">Courses</a></li>
+        <li><a href="team.html">Team</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+    </div>
+
+
+
+
+
+  </body>
+
+</html>
